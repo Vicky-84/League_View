@@ -1,0 +1,84 @@
+<div class="container-fluid" style="margin-top: 100px"> 
+
+<!-- Score Line-->     
+<div class="matchday img-responsive"></div>
+    <br>
+
+<section id="intro" style="background-image: url('img/score.jpg');" class="intro">      
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="container clearfix">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-sm-12 padding-small">
+                <h2 style="text-align: center"><a ng-href="#/team/{{singleMatch.team1}}" style="color: rgb(255, 255, 255)">{{singleMatch.team1}}</a> {{singleMatch.score1}} : {{singleMatch.score2}} <a ng-href="#/team/{{singleMatch.team2}}" style="color: rgb(255, 255, 255)">{{singleMatch.team2}}</a></h2>       
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+<!-- Score Line End-->    
+   
+<!-- Match Timeline-->    
+    
+    <div class="demo">
+        <div class="container">
+            <div class="row text-center">
+                <h1 class="heading-title"> Match Summary </h1>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-timeline">
+                        <div class="timeline">
+                            <div class="timeline-icon"></div>
+                            <div class="timeline-content">
+                                <span class="date">Kick Off!</span>
+                                <h4 class="title">First Half Begins</h4>
+                                <p class="description">
+                                    We are underway at the home ground of {{singleMatch.team1}} against the travelling team {{singleMatch.team2}}
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline">
+                            <div class="timeline-icon"></div>
+                            <div class="timeline-content right">
+                                <span class="date">Half Time!</span>
+                                <h4 class="title">First Half Ends</h4>
+                                <p class="description">
+                                    And it's the end of fabulous first half where both the teams looks good, we will start again after 15 minutes.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline">
+                            <div class="timeline-icon"></div>
+                            <div class="timeline-content">
+                                <span class="date">Kick Off!</span>
+                                <h4 class="title">Second Half Begins!</h4>
+                                <p class="description">
+                                    Here we go again where both teams will look for scoring opportunities and wants to take all the 3 points with them. 
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline">
+                            <div class="timeline-icon"></div>
+                            <div class="timeline-content right">
+                                <span class="date">Full Time!</span>
+                                <h4 class="title">Second Half Ends</h4>
+                                <p class="description">
+                                    And it's the end of another day of fantastic football match. Match ends at {{singleMatch.score1}} : {{singleMatch.score2}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Match Timeline End-->     
+
+</div>
